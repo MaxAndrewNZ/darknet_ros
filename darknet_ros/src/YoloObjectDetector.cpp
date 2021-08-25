@@ -442,7 +442,6 @@ void YoloObjectDetector::setupNetwork(char* cfgfile, char* weightfile, char* dat
 void YoloObjectDetector::yolo() {
   const auto wait_duration = std::chrono::milliseconds(2000);
   while (!getImageStatus()) {
-    printf("Waiting for image.\n");
     if (!isNodeRunning()) {
       return;
     }
