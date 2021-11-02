@@ -24,7 +24,6 @@ if (CUDA_FOUND)
     ${CUDA_NVCC_FLAGS};
     -O3
     -gencode=arch=compute_86,code=sm_86
-    -gencode arch=compute_30,code=sm_30
     -gencode arch=compute_61,code=sm_61
     -gencode arch=compute_62,code=sm_62
   )
